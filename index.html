@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <title>Examio</title>
+  </head>
+  <body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class= "container">
+        <a href="#" class="navbar-brand">Examio</a>
+        <button
+        class= "navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class= "nav-item">
+              <a href="#learn" class="nav-link">What You Will Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Common Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Meet our Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Jumbotron Start-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start ">
+      <div class= "container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+             <h1>Pass Any Exam</h1>
+            <span class= "text-warning"><h2>...Or Just Have Fun!</h2></span>
+            <p class="lead my-4">
+              Our goal is to give students the ability to test themselves in whatever subject they wish.
+              Using the latest API technology you will be able to fully customize the content of your exams,
+              allowing you the freedom to learn how you want, when you want.
+            </p>
+            <button class="btn btn-dark btn-md bg-dark" data-bs-toggle="modal" data-bs-target="#modal">Ready to get started?</button>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src = "img/undraw_exams_g-4-ow.svg" alt="Two people at desks taking a test"/>
+        </div>
+      </div>
+    </section>
+    <!--Jumbotron End-->
+
+    <!--Newsletter Start-->
+    <section class= "bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h2 class="mb-3 mb-md-0">Subscribe to our Newsletter</h2>
+          <div class="input-group newsletter-input">
+            <input type="text" class="form-control" placeholder="Enter your email"
+            aria-label="Email input form for subscription newsletter" aria-describedby="button-newsletter">
+            <div class="input-group-prepend" id="button-newsletter">
+              <button class="btn btn-dark btn-lg" type="button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Newsletter End-->
+
+    <!--Section no. 1 Start-->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class= "card-title mb3">Virtual Learning</h3>
+                <p class="card-text">Lorem impsum dolor est lorem impsum dolor est.
+                  Eirmod dolor aliquyam kasd labore sanctus consetetur erat.
+                  Stet sadipscing lorem no gubergren. Est diam sed duo erat lorem justo dolore amet.</p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-primary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class= "card-title mb3">Custom Exams</h3>
+                <p class="card-text">Lorem impsum dolor est lorem impsum dolor esLabore ea sanctus no invidunt lorem amet consetetur.
+                  Amet sed et voluptua at. Ipsum at erat justo lorem et no kasd. Duo est justo consetetur invidunt duo dolor.
+                  Gubergren duo takimata amet duo nonumy.</p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <h3 class= "card-title mb3">Measured Growth</h3>
+                <p class="card-text">Lorem impsum dolor est lorem impsum dolor estEt gubergren et vero justo takimata.
+                  Dolore et et ipsum lorem lorem elitr erat, eirmod erat sea kasd et diam clita, sed ut at kasd est nonumy gubergren.
+                  Takimata et.</p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section no. 1 End-->
+
+    <!--Section no. 2 Start-->
+
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/undraw_researching_re_fuod.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn Anything</h2>
+            <p class="lead">Fountain he known love uncouth loathed to vile might minstrels.
+              Deem from ofttimes haply him brow however that the to, call nine ah fellow and oer had mothernot at,
+              birth did he land made but feels and. In his suffice then not by ere full, moths rhyme sighed mood minstrels.
+              Me and still yes knew did minstrels near, steel nor true ah and him charms land but, of to made.</p>
+              <a href="" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i> Read More
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section no. 2 End-->
+
+
+    <!--Section no. 3 Start-->
+
+    <section id="earn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Earn Rewards</h2>
+            <p class="lead">Fountain he known love uncouth loathed to vile might minstrels.
+              Deem from ofttimes haply him brow however that the to, call nine ah fellow and oer had mothernot at,
+              birth did he land made but feels and. In his suffice then not by ere full, moths rhyme sighed mood minstrels.
+              Me and still yes knew did minstrels near, steel nor true ah and him charms land but, of to made.</p>
+              <a href="" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i> Read More
+              </a>
+          </div>
+          <div class="col-md">
+            <img src="img/undraw_winners_re_wr1l.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section no. 3 End-->
+
+    <!--FAQ Accordion Start-->
+
+    <section id="accordion" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="accordion-flush">
+
+          <!--Accordion Item 1-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed"
+              type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false"
+              aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <!--Accordion Item 1 End-->
+
+          <!--Accordion Item 2-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+              aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordion-flush">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                filled with some actual content.</div>
+            </div>
+          </div>
+          <!--Accordion Item 2 End-->
+
+          <!--Accordion Item 3-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+              aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more
+                representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <!--Accordion Item 3 End-->
+        </div>
+      </div>
+    </section>
+
+    <!--FAQ Accordion End-->
+
+    <!--Team Cards Start-->
+
+    <section id="team" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Our Team</h2>
+        <p class="lead text-center text-white mb-5">
+          Mit die freundschaft lispelnd die die was trüben. Erfreuet seelen.
+        </p>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/11.jpg"
+                alt="Man smiling with his arms crossed over his chest"
+                class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">John Doe</h3>
+                <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href=""><i class="bi bi-github text-dark mx-1"></i></a>
+                <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <p class="lead">Gestalten mich sich schwankende euch seelen manche, ein irrt der und ich mich ertönt ich.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/7.jpg"
+                alt="Red headed woman with bangs and green eyes making a suprised face"
+                class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Jane Seymour</h3>
+                <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href=""><i class="bi bi-github text-dark mx-1"></i></a>
+                <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <p class="lead">Gestalten mich sich schwankende euch seelen manche, ein irrt der und ich mich ertönt ich.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/11.jpg"
+                alt="Blonde woman standing on a street corner with her hands on her hips, looking down and smiling"
+                class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Anne Bonney</h3>
+                <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href=""><i class="bi bi-github text-dark mx-1"></i></a>
+                <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <p class="lead">Gestalten mich sich schwankende euch seelen manche, ein irrt der und ich mich ertönt ich.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/90.jpg"
+                alt="Asian man smiling"
+                class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Henry Tudor</h3>
+                <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href=""><i class="bi bi-github text-dark mx-1"></i></a>
+                <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <p class="lead">Gestalten mich sich schwankende euch seelen manche, ein irrt der und ich mich ertönt ich.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact and Map Start-->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">
+            Contact Info
+            </h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location</span>
+                50 Main St. USA
+              </li>
+            </ul>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Email</span>
+                email@hotmail.com
+              </li>
+            </ul>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Phone</span>
+                555-555-5555
+              </li>
+            </ul>
+          </div>
+          <div id="mapbox" class="col-md">
+            <h3>Find us here</h3>
+            <div id='map' style='width: 400px; height: 300px;'></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contact and Map End-->
+
+
+    <!--Team Cards End-->
+
+    <!--Footer Start-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <a href="#" class="position-relative bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+        <p class="lead p-5">
+          Copyright &copy; 2022 Examio <br>
+          Made with Bootstrap <bi class="bi-heart"></bi>
+        </p>
+      </div>
+
+    </footer>
+    <!--Footer End-->
+
+
+    <!--Modal Start-->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Create an Account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal End-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <script>mapboxgl.accessToken = 'pk.eyJ1Ijoid2luZWdhcnNrIiwiYSI6ImNsMWZpNWpkeDExbDEzZW54eWZhdHIyODUifQ.uEeSjOkavMKAW4QuX6eodg';
+      const map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [-74.5, 40], // starting position [lng, lat]
+      zoom: 9 // starting zoom
+      });</script>
+  </body>
+</html>
